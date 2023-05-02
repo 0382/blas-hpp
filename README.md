@@ -1,4 +1,5 @@
 # blas-hpp
+
 A c++ wrapper of CBLAS, for generic programming.
 
 A simple example is like
@@ -21,4 +22,4 @@ int main(int argc, char const *argv[])
 
 Every function like `blas::gemv` supports `float, double, std::complex<float>, std::complex<double>`, so that your can use them in a `template` function.
 
-In addition, `blas::dot` for `std::complex<float>, std::complex<double>` is alias of `alcdotc, zdotc`, and `blas::hemv` for `float, double` is alias of `ssymv, dsymv`. `blas::her, blas::her2, blas::hemm, blas::herk, blas::her2k` also works similarly. Thus you can write `template` simpler.
+In addition, `blas::dot` for `std::complex<float>, std::complex<double>` is alias of `cdotc, zdotc`, and `blas::hemv` for `float, double` is alias of `ssymv, dsymv`. `blas::her, blas::her2, blas::hemm, blas::herk, blas::her2k` also works similarly. Thus you can write `template` simpler.
